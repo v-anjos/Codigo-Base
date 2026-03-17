@@ -26,19 +26,10 @@ Este repositório reúne os materiais utilizados durante o projeto:
 codigo-base/
 │
 ├── slides/
-│   ├── encontro01-introducao-algoritmos.pdf
-│   ├── encontro02-variaveis-e-tipos.pdf
-│   └── encontro03-estruturas-condicionais.pdf
-│
+│ 
 ├── desafios/
-│   ├── lista01-logica-basica.md
-│   ├── lista02-condicionais.md
-│   └── lista03-repeticao.md
 │
 ├── solucoes/
-│   ├── lista01/
-│   ├── lista02/
-│   └── lista03/
 │
 └── README.md
 ```
