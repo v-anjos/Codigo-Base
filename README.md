@@ -16,7 +16,6 @@ Este repositório reúne os materiais utilizados durante o projeto:
 * 📊 Slides das aulas
 * 🧠 Desafios de lógica e algoritmos
 * 💻 Soluções comentadas em Portugol
-* 🏆 Problemas utilizados na Mini Maratona de Algoritmos
 
 ---
 
