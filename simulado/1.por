@@ -1,6 +1,22 @@
 programa
 {
     inclua biblioteca Util --> u
+    
+    // Recebe o vetor de frequência por referência
+    // e altera seus valores diretamente.
+    funcao preencher_frequencia(inteiro lancamentos[], inteiro &frequencia[])
+    {
+        para (inteiro i = 0; i < 10; i++)
+        {
+            frequencia[lancamentos[i] - 1]++
+        }
+    }
+
+    // Retorna somente a quantidade da face solicitada
+    funcao inteiro contar_face(inteiro frequencia[], inteiro face)
+    {
+        retorne frequencia[face - 1]
+    }
 
     funcao inicio()
     {
@@ -50,19 +66,4 @@ programa
         )
     }
 
-    // Recebe o vetor de frequência por referência
-    // e altera seus valores diretamente.
-    funcao preencher_frequencia(inteiro lancamentos[], inteiro &frequencia[])
-    {
-        para (inteiro i = 0; i < 10; i++)
-        {
-            frequencia[lancamentos[i] - 1]++
-        }
-    }
-
-    // Retorna somente a quantidade da face solicitada
-    funcao inteiro contar_face(inteiro frequencia[], inteiro face)
-    {
-        retorne frequencia[face - 1]
-    }
 }
