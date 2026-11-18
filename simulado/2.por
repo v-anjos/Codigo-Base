@@ -2,6 +2,38 @@ programa
 {
     inclua biblioteca Util --> u
 
+        // Calcula a média de um determinado aluno
+    funcao real calcular_media(inteiro notas[][], inteiro aluno)
+    {
+        inteiro soma = 0
+
+        para (inteiro avaliacao = 0; avaliacao < 3; avaliacao++)
+        {
+            soma = soma + notas[aluno][avaliacao]
+        }
+
+        retorne soma / 3.0
+    }
+
+    // Procura a maior nota existente na matriz
+    funcao inteiro maior_nota(inteiro notas[][])
+    {
+        inteiro maior = notas[0][0]
+
+        para (inteiro aluno = 0; aluno < 4; aluno++)
+        {
+            para (inteiro avaliacao = 0; avaliacao < 3; avaliacao++)
+            {
+                se (notas[aluno][avaliacao] > maior)
+                {
+                    maior = notas[aluno][avaliacao]
+                }
+            }
+        }
+    
+
+        retorne maior
+    }
     funcao inicio()
     {
         inteiro notas[4][3]
@@ -45,37 +77,7 @@ programa
         }
 
         escreva("\nMaior nota registrada: ", maior_nota(notas), "\n")
-    }
+    
+   }
 
-    // Calcula a média de um determinado aluno
-    funcao real calcular_media(inteiro notas[][], inteiro aluno)
-    {
-        inteiro soma = 0
-
-        para (inteiro avaliacao = 0; avaliacao < 3; avaliacao++)
-        {
-            soma = soma + notas[aluno][avaliacao]
-        }
-
-        retorne soma / 3.0
-    }
-
-    // Procura a maior nota existente na matriz
-    funcao inteiro maior_nota(inteiro notas[][])
-    {
-        inteiro maior = notas[0][0]
-
-        para (inteiro aluno = 0; aluno < 4; aluno++)
-        {
-            para (inteiro avaliacao = 0; avaliacao < 3; avaliacao++)
-            {
-                se (notas[aluno][avaliacao] > maior)
-                {
-                    maior = notas[aluno][avaliacao]
-                }
-            }
-        }
-
-        retorne maior
-    }
 }
